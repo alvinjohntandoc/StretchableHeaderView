@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func registerAction(_ sender: Any) {
-        performSegue(withIdentifier: "SignUpTableViewController", sender: nil)
+        performSegue(withIdentifier: "SignUpViewController", sender: nil)
     }
     
 }

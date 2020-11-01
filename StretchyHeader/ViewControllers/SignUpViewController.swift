@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController, TableViewStretchable {
+class SignUpViewController: StretchyViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,18 +26,11 @@ class SignUpViewController: UIViewController, TableViewStretchable {
     let items: [SignUpItem] = [.firstName, .lastName, .address,
             .email, .mobileNo, .password, .confirmPassword]
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.navigationBar
-        .setBarColor(.clear)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.contentInsetAdjustmentBehavior = .never
-        activateHeaderStretchability()
+    
+        /// set header view
+        setHeaderView(headerView, in: tableView)
     }
     
 }
@@ -50,10 +43,6 @@ extension SignUpViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        updateStretchableHeader()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

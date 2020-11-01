@@ -21,10 +21,9 @@
 		0D3D6B89254EC1A200A798B0 /* HeaderViewStretchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D6B87254EC1A200A798B0 /* HeaderViewStretchable.swift */; };
 		0D3D6B8C254EC29600A798B0 /* ATIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D6B8B254EC29600A798B0 /* ATIdentifiable.swift */; };
 		0D3D6B8F254EC44C00A798B0 /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D6B8E254EC44C00A798B0 /* UIView+Xib.swift */; };
-		0D3D6B94254EC6F100A798B0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D6B93254EC6F100A798B0 /* SignUpViewController.swift */; };
 		0D3D6B96254ED00900A798B0 /* SignUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D6B95254ED00900A798B0 /* SignUpTableViewCell.swift */; };
 		0D3D6B98254EECB000A798B0 /* StretchyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D6B97254EECB000A798B0 /* StretchyViewController.swift */; };
-		0D3D6B9A254EEF9400A798B0 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D6B99254EEF9400A798B0 /* SignUpTableViewController.swift */; };
+		7043771F254F15D10025AF52 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7043771E254F15D10025AF52 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +64,9 @@
 		0D3D6B87254EC1A200A798B0 /* HeaderViewStretchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewStretchable.swift; sourceTree = "<group>"; };
 		0D3D6B8B254EC29600A798B0 /* ATIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATIdentifiable.swift; sourceTree = "<group>"; };
 		0D3D6B8E254EC44C00A798B0 /* UIView+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
-		0D3D6B93254EC6F100A798B0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0D3D6B95254ED00900A798B0 /* SignUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewCell.swift; sourceTree = "<group>"; };
 		0D3D6B97254EECB000A798B0 /* StretchyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyViewController.swift; sourceTree = "<group>"; };
-		0D3D6B99254EEF9400A798B0 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		7043771E254F15D10025AF52 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +151,8 @@
 		0D3D6B8D254EC2BB00A798B0 /* StretchyHeaderFiles */ = {
 			isa = PBXGroup;
 			children = (
+				0D3D6B81254EBF7F00A798B0 /* UINavigationBar+Transparency.swift */,
+				0D3D6B97254EECB000A798B0 /* StretchyViewController.swift */,
 				0D3D6B87254EC1A200A798B0 /* HeaderViewStretchable.swift */,
 			);
 			path = StretchyHeaderFiles;
@@ -162,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				0D3D6B8B254EC29600A798B0 /* ATIdentifiable.swift */,
-				0D3D6B81254EBF7F00A798B0 /* UINavigationBar+Transparency.swift */,
 				0D3D6B8E254EC44C00A798B0 /* UIView+Xib.swift */,
 			);
 			path = Helpers;
@@ -172,9 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				0D3D6B53254EBA2100A798B0 /* ViewController.swift */,
-				0D3D6B93254EC6F100A798B0 /* SignUpViewController.swift */,
-				0D3D6B97254EECB000A798B0 /* StretchyViewController.swift */,
-				0D3D6B99254EEF9400A798B0 /* SignUpTableViewController.swift */,
+				7043771E254F15D10025AF52 /* SignUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -322,14 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D3D6B94254EC6F100A798B0 /* SignUpViewController.swift in Sources */,
-				0D3D6B9A254EEF9400A798B0 /* SignUpTableViewController.swift in Sources */,
 				0D3D6B82254EBF7F00A798B0 /* UINavigationBar+Transparency.swift in Sources */,
 				0D3D6B89254EC1A200A798B0 /* HeaderViewStretchable.swift in Sources */,
 				0D3D6B54254EBA2100A798B0 /* ViewController.swift in Sources */,
 				0D3D6B8C254EC29600A798B0 /* ATIdentifiable.swift in Sources */,
 				0D3D6B50254EBA2100A798B0 /* AppDelegate.swift in Sources */,
 				0D3D6B98254EECB000A798B0 /* StretchyViewController.swift in Sources */,
+				7043771F254F15D10025AF52 /* SignUpViewController.swift in Sources */,
 				0D3D6B96254ED00900A798B0 /* SignUpTableViewCell.swift in Sources */,
 				0D3D6B8F254EC44C00A798B0 /* UIView+Xib.swift in Sources */,
 				0D3D6B85254EC13B00A798B0 /* SignUpHeaderView.swift in Sources */,
@@ -508,6 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StretchyHeader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -525,6 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StretchyHeader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
