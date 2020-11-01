@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: StretchyViewController {
+class SignUpViewController: StretchableViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,6 +19,8 @@ class SignUpViewController: StretchyViewController {
     }
     
     lazy var headerView: HeaderViewStretchable = {
+        // This is just adding a xib view in your controller
+        // feel free to do it on your own way :)
         let headerView: SignUpHeaderView = instanceFromNib()
         return headerView
     }()

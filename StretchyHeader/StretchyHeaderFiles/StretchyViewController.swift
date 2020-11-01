@@ -1,5 +1,5 @@
 //
-//  StretchyViewController.swift
+//  StretchableViewController.swift
 //  StretchyHeader
 //
 //  Created by Alvin John Tandoc on 11/1/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StretchyViewController: UIViewController {
+class StretchableViewController: UIViewController {
     
     /// A uiview that conforms to HeaderViewStretchable,
     ///  this will be the header view of our scrollView
@@ -93,7 +93,7 @@ class StretchyViewController: UIViewController {
     }
 }
 
-extension StretchyViewController: UIScrollViewDelegate {
+extension StretchableViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         updateStretchableHeader()
